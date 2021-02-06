@@ -1,29 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-  </div>
+  <v-app>
+    <Nav />
+
+    <v-main>
+      <v-container>
+        <img height="10%" width="10%" contain src="@/assets/img/gopher.svg" />
+        <img height="10%" width="10%" contain src="@/assets/img/go.svg" />
+        <img height="10%" width="10%" contain src="@/assets/img/python.svg" />
+        <img height="10%" width="10%" contain src="@/assets/img/aws-ec2.svg" />
+      </v-container>
+      <v-container>
+        <Timeline />
+      </v-container>
+    </v-main>
+
+    <Footer />
+  </v-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import Nav from "./components/Nav.vue";
+import Timeline from "./components/Timeline.vue";
+import Footer from "./components/Footer.vue";
 
 export default Vue.extend({
   name: "App",
+
   components: {
-    HelloWorld
-  }
+    Nav,
+    Timeline,
+    Footer
+  },
+
+  data: () => ({
+    //
+  })
 });
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

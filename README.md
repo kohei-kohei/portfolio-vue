@@ -1,24 +1,7 @@
-# portfolio
+# Portfolio
 
-## Project setup
-```
-npm install
-```
+https://kohei-kohei.github.io/practice1/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Development Language
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue + Vuetify + TypeScript 
