@@ -3,15 +3,9 @@
     <Nav />
 
     <v-main>
-      <v-container>
-        <img height="10%" width="10%" contain src="@/assets/img/gopher.svg" />
-        <img height="10%" width="10%" contain src="@/assets/img/go.svg" />
-        <img height="10%" width="10%" contain src="@/assets/img/python.svg" />
-        <img height="10%" width="10%" contain src="@/assets/img/aws-ec2.svg" />
-      </v-container>
-      <v-container>
-        <Timeline />
-      </v-container>
+      <About />
+      <Skill />
+      <Timeline />
     </v-main>
 
     <Footer />
@@ -21,6 +15,8 @@
 <script lang="ts">
 import Vue from "vue";
 import Nav from "./components/Nav.vue";
+import About from "./components/About.vue";
+import Skill from "./components/Skill.vue";
 import Timeline from "./components/Timeline.vue";
 import Footer from "./components/Footer.vue";
 
@@ -29,6 +25,8 @@ export default Vue.extend({
 
   components: {
     Nav,
+    About,
+    Skill,
     Timeline,
     Footer
   },
@@ -38,3 +36,12 @@ export default Vue.extend({
   })
 });
 </script>
+
+<style lang="scss">
+.container {
+  text-align: center;
+}
+h2 {
+  margin: 30px auto 20px;
+}
+</style>
