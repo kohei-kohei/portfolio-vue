@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 class="display-1">History</h2>
+    <h2 class="display-1">Experience</h2>
 
     <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item

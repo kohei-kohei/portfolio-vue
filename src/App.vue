@@ -47,4 +47,11 @@ h2 {
 h3 {
   margin: 20px auto;
 }
+p {
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
 </style>
