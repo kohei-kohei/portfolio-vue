@@ -9,11 +9,15 @@
     <p>機械学習を用いた研究をしています</p>
 
     <a href="https://github.com/kohei-kohei">
-      <v-icon size="32px" class="black--text">
+      <v-icon size="32px" color="black">
         mdi-github
       </v-icon>
       kohei-kohei
     </a>
+
+    <v-icon size="32px" color="primary">
+      mdi-microsoft-visual-studio-code
+    </v-icon>
 
     <a href="https://scrapbox.io/kohei-kohei-develop/">
       Scrapbox
@@ -35,7 +39,6 @@ export default Vue.extend({
   width: 30px;
 }
 a {
-  display: block;
   text-decoration: none;
 }
 </style>

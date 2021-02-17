@@ -44,4 +44,7 @@ export default Vue.extend({
 h2 {
   margin: 30px auto 20px;
 }
+h3 {
+  margin: 20px auto;
+}
 </style>

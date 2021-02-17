@@ -2,19 +2,27 @@
   <v-container>
     <h2 class="display-1">Skill</h2>
 
-    <h3 class="headline">langage</h3>
+    <h3 class="headline">
+      <v-icon size="20px" color="black"> mdi-xml </v-icon>
+      langage
+      <v-icon size="20px" color="black"> mdi-xml </v-icon>
+    </h3>
 
     <v-row justify="center" align-content="center">
-      <v-col v-for="(lang, index) in langs" :key="index" cols="1">
+      <v-col v-for="(lang, index) in langs" :key="index" sm="2">
         <img :src="lang.src" :alt="lang.name" />
         <p>{{ lang.name }}</p>
       </v-col>
     </v-row>
 
-    <h3 class="headline">other</h3>
+    <h3 class="headline">
+      <v-icon size="20px" color="black"> mdi-tools </v-icon>
+      other
+      <v-icon size="20px" color="black"> mdi-tools </v-icon>
+    </h3>
 
     <v-row justify="center" align-content="center">
-      <v-col v-for="(tool, index) in tools" :key="index" cols="1">
+      <v-col v-for="(tool, index) in tools" :key="index" sm="2">
         <img :src="tool.src" :alt="tool.name" />
         <p>{{ tool.name }}</p>
       </v-col>
@@ -75,8 +83,9 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.col {
-  margin: 20px 15px;
+.row {
+  max-width: 768px;
+  margin: 0 auto;
 }
 p {
   font-size: 18px;
