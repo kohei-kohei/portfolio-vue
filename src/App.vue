@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-main>
+      <Top />
       <About />
       <Skill />
       <Timeline />
@@ -12,6 +13,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Top from "./components/Top.vue";
 import About from "./components/About.vue";
 import Skill from "./components/Skill.vue";
 import Timeline from "./components/Timeline.vue";
@@ -21,6 +23,7 @@ export default Vue.extend({
   name: "App",
 
   components: {
+    Top,
     About,
     Skill,
     Timeline,

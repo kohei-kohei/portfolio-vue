@@ -40,7 +40,7 @@
             <v-card-text class="d-flex align-start">
               <p class="year">'22年4月〜</p>
               <p class="describe">
-                バックエンドエンジニア(予定)
+                バックエンドエンジニア
                 <v-icon size="32px" color="light-blue">
                   mdi-language-go
                 </v-icon>
