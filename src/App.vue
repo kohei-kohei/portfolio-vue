@@ -1,7 +1,5 @@
 <template>
   <v-app>
-    <Nav />
-
     <v-main>
       <About />
       <Skill />
@@ -14,7 +12,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Nav from "./components/Nav.vue";
 import About from "./components/About.vue";
 import Skill from "./components/Skill.vue";
 import Timeline from "./components/Timeline.vue";
@@ -24,7 +21,6 @@ export default Vue.extend({
   name: "App",
 
   components: {
-    Nav,
     About,
     Skill,
     Timeline,
