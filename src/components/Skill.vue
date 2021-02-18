@@ -3,9 +3,9 @@
     <h2 class="display-1">Skill</h2>
 
     <h3 class="headline">
-      <v-icon size="22px" color="black"> mdi-xml </v-icon>
+      <v-icon size="20px" color="black"> mdi-file-code-outline </v-icon>
       langage
-      <v-icon size="22px" color="black"> mdi-xml </v-icon>
+      <v-icon size="20px" color="black"> mdi-file-code-outline </v-icon>
     </h3>
 
     <v-row justify="center" align-content="center">

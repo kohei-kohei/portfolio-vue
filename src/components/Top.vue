@@ -17,10 +17,18 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+
 .top {
   background: #8360c3;
   background: -webkit-linear-gradient(to bottom right, #8360c3, #2ebf91);
   background: linear-gradient(to bottom right, #8360c3, #2ebf91);
   min-height: 100vh;
+  h1 {
+    background: rgba($color: #000000, $alpha: 0.1);
+    font-family: "Lora", serif !important;
+    font-style: italic;
+    padding: 30px;
+  }
 }
 </style>
