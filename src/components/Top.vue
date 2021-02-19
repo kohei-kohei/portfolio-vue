@@ -1,6 +1,6 @@
 <template>
   <v-container class="top d-flex align-center justify-center" fluid>
-    <h1 class="display-3 text-h3 text-sm-h2 text-lg-h1 white--text">
+    <h1 class="text-h3 text-sm-h2 text-lg-h1 white--text">
       Welcome to Kohei's page
     </h1>
   </v-container>

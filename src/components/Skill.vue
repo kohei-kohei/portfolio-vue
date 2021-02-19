@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <h2 class="display-1">Skill</h2>
+    <h2 class="text-h4 text-sm-h3">Skill</h2>
 
-    <h3 class="headline">
+    <h3 class="text-h5">
       <v-icon size="20px" color="black"> mdi-file-code-outline </v-icon>
       langage
       <v-icon size="20px" color="black"> mdi-file-code-outline </v-icon>
@@ -15,7 +15,7 @@
       </v-col>
     </v-row>
 
-    <h3 class="headline">
+    <h3 class="text-h5">
       <v-icon size="18px" color="black"> mdi-tools </v-icon>
       other
       <v-icon size="18px" color="black"> mdi-tools </v-icon>

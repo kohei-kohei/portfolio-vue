@@ -1,6 +1,6 @@
 <template>
-  <v-footer dark padless>
-    <v-card flat tile width="100%" class="purple lighten-4 text-center">
+  <v-footer dark padless class="mt-7">
+    <v-card flat tile width="100%" class="purple lighten-5 text-center">
       <v-card-text class="subtitle-1 black--text pb-2">
         This web page is created by
         <v-icon color="green darken-2">

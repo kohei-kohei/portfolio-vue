@@ -4,7 +4,8 @@
       <Top />
       <About />
       <Skill />
-      <Timeline />
+      <Experience />
+      <Intern />
     </v-main>
 
     <Footer />
@@ -16,7 +17,8 @@ import Vue from "vue";
 import Top from "./components/Top.vue";
 import About from "./components/About.vue";
 import Skill from "./components/Skill.vue";
-import Timeline from "./components/Timeline.vue";
+import Experience from "./components/Experience.vue";
+import Intern from "./components/Intern.vue";
 import Footer from "./components/Footer.vue";
 
 export default Vue.extend({
@@ -26,7 +28,8 @@ export default Vue.extend({
     Top,
     About,
     Skill,
-    Timeline,
+    Experience,
+    Intern,
     Footer
   },
 
@@ -41,7 +44,7 @@ export default Vue.extend({
   text-align: center;
 }
 h2 {
-  margin: 30px auto 20px;
+  margin: 20px auto;
 }
 h3 {
   margin: 20px auto;
