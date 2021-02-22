@@ -15,21 +15,30 @@ import Vue from "vue";
 
 export type DataType = {
   height: number;
+  width: number;
 };
 
 export default Vue.extend({
   data(): DataType {
     return {
-      height: window.innerHeight
+      height: window.innerHeight,
+      width: window.innerWidth
     };
   },
   methods: {
     handleResize: function() {
       this.height = window.innerHeight;
+      this.width = window.innerWidth;
     }
   },
   mounted: function() {
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener("resize", () => {
+      // Safariのタブ対策
+      // 画面の横サイズが変わった時だけ再計算する
+      if (this.width !== window.innerWidth) {
+        this.handleResize;
+      }
+    });
   },
   beforeDestroy: function() {
     window.removeEventListener("resize", this.handleResize);
