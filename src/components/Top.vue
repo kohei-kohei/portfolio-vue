@@ -36,7 +36,7 @@ export default Vue.extend({
       // Safariのタブ対策
       // 画面の横サイズが変わった時だけ再計算する
       if (this.width !== window.innerWidth) {
-        this.handleResize;
+        this.handleResize();
       }
     });
   },
