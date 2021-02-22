@@ -1,5 +1,9 @@
 <template>
-  <v-container class="top d-flex align-center justify-center" fluid>
+  <v-container
+    class="top d-flex align-center justify-center"
+    fluid
+    :style="{ height: height + 'px' }"
+  >
     <h1 class="text-h3 text-sm-h2 text-lg-h1 white--text">
       Welcome to Kohei's page
     </h1>
@@ -9,10 +13,27 @@
 <script lang="ts">
 import Vue from "vue";
 
+export type DataType = {
+  height: number;
+};
+
 export default Vue.extend({
-  data: () => ({
-    //
-  })
+  data(): DataType {
+    return {
+      height: window.innerHeight
+    };
+  },
+  methods: {
+    handleResize: function() {
+      this.height = window.innerHeight;
+    }
+  },
+  mounted: function() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeDestroy: function() {
+    window.removeEventListener("resize", this.handleResize);
+  }
 });
 </script>
 
@@ -23,7 +44,6 @@ export default Vue.extend({
   background: #8360c3;
   background: -webkit-linear-gradient(to bottom right, #8360c3, #2ebf91);
   background: linear-gradient(to bottom right, #8360c3, #2ebf91);
-  min-height: 100vh;
   h1 {
     background: rgba($color: #000000, $alpha: 0.1);
     font-family: "Lora", serif !important;

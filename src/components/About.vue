@@ -94,67 +94,69 @@ export type DataType = {
 };
 
 export default Vue.extend({
-  data: () => ({
-    iconSize: "22px",
-    likeIcons: [
-      {
-        color: "black",
-        icon: "mdi-apple"
-      },
-      {
-        color: "blue",
-        icon: "mdi-microsoft-visual-studio-code"
-      },
-      {
-        color: "black",
-        icon: "mdi-soccer"
-      },
-      {
-        color: "black",
-        icon: "mdi-badminton"
-      },
-      {
-        color: "black",
-        icon: "mdi-snowboard"
-      },
-      {
-        color: "red accent-2",
-        icon: "mdi-glass-cocktail"
-      },
-      {
-        color: "black",
-        icon: "mdi-airplane-takeoff"
-      },
-      {
-        color: "red",
-        icon: "mdi-music-box"
-      },
-      {
-        color: "amber darken-2",
-        icon: "mdi-cat"
-      }
-    ],
-    backgrounds: [
-      {
-        color: "grey darken-1",
-        icon: "mdi-language-c",
-        year: "'16年4月〜",
-        content: "CSの基礎、画像・音声処理"
-      },
-      {
-        color: "grey darken-1",
-        icon: "mdi-language-python",
-        year: "'19年4月〜",
-        content: "機械学習を用いた自然言語処理の研究"
-      },
-      {
-        color: "light-blue",
-        icon: "mdi-language-go",
-        year: "'22年4月〜",
-        content: "バックエンドエンジニア(予定)"
-      }
-    ]
-  })
+  data(): DataType {
+    return {
+      iconSize: "22px",
+      likeIcons: [
+        {
+          color: "black",
+          icon: "mdi-apple"
+        },
+        {
+          color: "blue",
+          icon: "mdi-microsoft-visual-studio-code"
+        },
+        {
+          color: "black",
+          icon: "mdi-soccer"
+        },
+        {
+          color: "black",
+          icon: "mdi-badminton"
+        },
+        {
+          color: "black",
+          icon: "mdi-snowboard"
+        },
+        {
+          color: "red accent-2",
+          icon: "mdi-glass-cocktail"
+        },
+        {
+          color: "black",
+          icon: "mdi-airplane-takeoff"
+        },
+        {
+          color: "red",
+          icon: "mdi-music-box"
+        },
+        {
+          color: "amber darken-2",
+          icon: "mdi-cat"
+        }
+      ],
+      backgrounds: [
+        {
+          color: "grey darken-1",
+          icon: "mdi-language-c",
+          year: "'16年4月〜",
+          content: "CSの基礎、画像・音声処理"
+        },
+        {
+          color: "grey darken-1",
+          icon: "mdi-language-python",
+          year: "'19年4月〜",
+          content: "機械学習を用いた自然言語処理の研究"
+        },
+        {
+          color: "light-blue",
+          icon: "mdi-language-go",
+          year: "'22年4月〜",
+          content: "バックエンドエンジニア(予定)"
+        }
+      ]
+    };
+  }
 });
 </script>
 

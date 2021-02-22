@@ -40,18 +40,20 @@ export type DataType = {
 };
 
 export default Vue.extend({
-  data: () => ({
-    interns: [
-      {
-        color: "grey darken-4",
-        icon: "mdi-video-image",
-        term: "2020年6月1日〜2021年1月28日",
-        name: "デジタルクルーズ株式会社",
-        content:
-          "私1人で使用言語や設計を考え、エンジニアの方にアドバイスをいただきながら、GoとVueとMySQLを使って勤怠管理システムを実装し、EC2にデプロイしました。"
-      }
-    ]
-  })
+  data(): DataType {
+    return {
+      interns: [
+        {
+          color: "grey darken-4",
+          icon: "mdi-video-image",
+          term: "2020年6月1日〜2021年1月28日",
+          name: "デジタルクルーズ株式会社",
+          content:
+            "私1人で使用言語や設計を考え、エンジニアの方にアドバイスをいただきながら、GoとVueとMySQLを使って勤怠管理システムを実装し、EC2にデプロイしました。"
+        }
+      ]
+    };
+  }
 });
 </script>
 
