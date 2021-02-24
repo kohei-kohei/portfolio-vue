@@ -43,7 +43,7 @@ export default Vue.extend({
     return {
       langs: [
         {
-          src: require("@/assets/img/logo.png"),
+          src: require("@/assets/img/vue.svg"),
           name: "Vue"
         },
         {
