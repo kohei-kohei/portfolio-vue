@@ -74,6 +74,14 @@ export default Vue.extend({
           name: "株式会社VOYAGE GROUP",
           content:
             "４人１チームとなり、GoとAWSを用いてパフォーマンスチューニングを行いました。"
+        },
+        {
+          color: "light-green darken-1",
+          icon: "mdi-television-classic",
+          term: "2021年3月 2days",
+          name: "株式会社サイバーエージェント",
+          content:
+            "ABEMAの視聴データを題材に機械学習を用いた番組レコメンド機能を作成し、それをAPIに組み込む体験をしました。私は自由課題としてCodeDeployを用いた自動デプロイに挑戦しました。"
         }
       ]
     };
