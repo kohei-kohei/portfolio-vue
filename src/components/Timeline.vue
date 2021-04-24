@@ -25,16 +25,6 @@
 <script lang="ts">
 import Vue, { PropType } from "vue";
 
-export type DataType = {
-  interns: {
-    color: string;
-    icon: string;
-    term: string;
-    name: string;
-    content: string;
-  }[];
-};
-
 export default Vue.extend({
   props: {
     items: Object as PropType<DataType>

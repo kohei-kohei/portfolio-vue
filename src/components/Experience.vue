@@ -10,16 +10,6 @@
 import Vue from "vue";
 import Timeline from "./Timeline.vue";
 
-export type DataType = {
-  interns: {
-    color: string;
-    icon: string;
-    term: string;
-    name: string;
-    content: string;
-  }[];
-};
-
 export default Vue.extend({
   components: {
     Timeline
