@@ -2,32 +2,13 @@
   <v-container>
     <h2 class="text-h4 text-sm-h3">Intern</h2>
 
-    <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
-      <v-timeline-item
-        v-for="(intern, i) in interns"
-        :key="i"
-        :color="intern.color"
-        :icon="intern.icon"
-        fill-dot
-      >
-        <v-card :color="intern.color" dark>
-          <span class="mt-2 ml-4">{{ intern.term }}</span>
-          <v-card-title class="title pt-0 pb-2">
-            {{ intern.name }}
-          </v-card-title>
-          <v-card-text class="white text--primary pa-4">
-            <p class="mb-0">
-              {{ intern.content }}
-            </p>
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
+    <Timeline :items="interns" />
   </v-container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Timeline from "./Timeline.vue";
 
 export type DataType = {
   interns: {
@@ -40,6 +21,9 @@ export type DataType = {
 };
 
 export default Vue.extend({
+  components: {
+    Timeline
+  },
   data(): DataType {
     return {
       interns: [
@@ -88,12 +72,3 @@ export default Vue.extend({
   }
 });
 </script>
-
-<style lang="scss" scoped>
-.v-card {
-  text-align: left;
-  span {
-    display: inline-block;
-  }
-}
-</style>
