@@ -31,7 +31,7 @@ export default Vue.extend({
           term: "2021年4月20日〜現在",
           name: "株式会社スタジアム",
           content:
-            "Web面接システムのバックエンドを担当し、GoとgRPCを用いてシステムの改善・開発を行いました。"
+            "GoとgRPCを用いてWeb面接システムの改善・開発を行いました。また、ReactとWebRTCを用いて面接画面などのUI・UXの改善を行いました。"
         }
       ]
     };
