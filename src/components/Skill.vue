@@ -43,24 +43,24 @@ export default Vue.extend({
     return {
       langs: [
         {
-          src: require("@/assets/img/vue.svg"),
-          name: "Vue"
-        },
-        {
-          src: require("@/assets/img/python.svg"),
-          name: "Python"
-        },
-        {
           src: require("@/assets/img/gopher.svg"),
           name: "Go"
         },
         {
-          src: require("@/assets/img/php.svg"),
-          name: "PHP"
+          src: require("@/assets/img/typescript-icon.svg"),
+          name: "TypeScript"
         },
         {
-          src: require("@/assets/img/mysql.svg"),
-          name: "MySQL"
+          src: require("@/assets/img/react.svg"),
+          name: "React"
+        },
+        {
+          src: require("@/assets/img/vue.svg"),
+          name: "Vue.js"
+        },
+        {
+          src: require("@/assets/img/python.svg"),
+          name: "Python"
         }
       ],
       tools: [
@@ -73,8 +73,12 @@ export default Vue.extend({
           name: "Docker"
         },
         {
-          src: require("@/assets/img/aws-ec2.svg"),
-          name: "EC2"
+          src: require("@/assets/img/grpc.svg"),
+          name: "gRPC"
+        },
+        {
+          src: require("@/assets/img/webrtc.svg"),
+          name: "WebRTC"
         }
       ]
     };
