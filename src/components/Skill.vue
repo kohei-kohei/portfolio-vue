@@ -73,6 +73,10 @@ export default Vue.extend({
           name: "Docker"
         },
         {
+          src: require("@/assets/img/firebase.svg"),
+          name: "firebase"
+        },
+        {
           src: require("@/assets/img/grpc.svg"),
           name: "gRPC"
         },
