@@ -149,8 +149,8 @@ export default Vue.extend({
           content: "機械学習を用いた自然言語処理の研究"
         },
         {
-          color: "light-blue",
-          icon: "mdi-language-go",
+          color: "",
+          icon: "",
           year: "'22年4月〜",
           content: "バックエンドエンジニア(予定)"
         }
