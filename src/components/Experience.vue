@@ -28,10 +28,10 @@ export default Vue.extend({
         {
           color: "deep-orange darken-3",
           icon: "mdi-video-account",
-          term: "2021年4月20日〜現在",
+          term: "2021年4月20日〜2021年12月21日",
           name: "株式会社スタジアム",
           content:
-            "GoとgRPCを用いてWeb面接システムの改善・開発を行いました。また、ReactとWebRTCを用いて面接画面などのUI・UXの改善を行いました。"
+            "GoとgRPCを用いてWeb面接システムの改善・開発を行いました。また、ReactとWebRTCを用いて面接画面などのUI・UXの改善を行いました。Storybookを用いた開発やCodeceptJSを用いたE2Eテストを経験させてもらいました。"
         }
       ]
     };
